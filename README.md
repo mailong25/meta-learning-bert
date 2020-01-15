@@ -1,6 +1,8 @@
 # Fewshot text classification with meta learning and BERT
 ## Requirements
   - transformers==2.2.1
+  - python>=3.6
+  - torch==1.3.0
 
 # Introduction
 This repository is an implementation of First-order MAML and Reptile on top of BERT. For those who interested in Second-order MAML, we also provide a script that performs functional forward with specified BERT's weights
