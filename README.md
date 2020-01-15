@@ -2,10 +2,10 @@
 This repository is an implementation of First-order MAML and Reptile on top of BERT. 
 Application can be use for domain adaptation with limited training examples. In our case, we try to build an build an accurate sentiment analysis model of Amazon product reviews for low-resource domains (~ 80 training examples/domain).
 
-# What is domain adaptation in our case:
+What is domain adaptation in our case:
 Domain adaptation is a field associated with machine learning and transfer learning. This scenario arises when we aim at learning from high-resource domains a well performing model on low-resource (but related) domains.
 
-# For example, number of training examples/domain in our case
+For example, number of training examples/domain in our case
 Counter({'apparel': 1717,
          'baby': 1107,
          'beauty': 993,
@@ -45,8 +45,8 @@ We stimulate a lot of situations where the Model_X are forced to learn fast with
 There meta tasks is constructed from high-resource domains, serving as meta training data.
 
 So, what is the form of "learning strategy" of a learner ? . It's simply an initialization of weights.
-A good learner (learner that learn fast and obtrain good result on test-set) have a good initialization of weight, which can be easily tunned on data from new domains.
-A bad learner simply have a bad initialization of weights.
+ - A good learner (learner that learn fast and obtrain good result on test-set) have a good initialization of weight, which can be easily tunned on data from new domains.
+ - A bad learner simply have a bad initialization of weights.
 
 In other words, meta training is simply a process of learning to initialize model's weights such that these weights can be easily tunned. 
 
