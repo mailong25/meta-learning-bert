@@ -6,29 +6,30 @@ Application can be use for domain adaptation with limited training examples. In 
 What is domain adaptation:
 Domain adaptation is a field associated with machine learning and transfer learning. This scenario arises when we aim at learning from high-resource domains a well performing model on low-resource (but related) domains.
 
-For example, number of training examples/domain in our case
-Counter({'apparel': 1717,
-         'baby': 1107,
-         'beauty': 993,
-         'books': 921,
-         'camera_&_photo': 1086,
-         'cell_phones_&_service': 698,
-         'dvd': 893,
-         'electronics': 1277,
-         'grocery': 1100,
-         'health_&_personal_care': 1429,
-         'jewelry_&_watches': 1086,
-         'kitchen_&_housewares': 1390,
-         'magazines': 1133,
-         'music': 1007,
-         'outdoor_living': 980,
-         'software': 1029,
-         'sports_&_outdoors': 1336,
-         'toys_&_games': 1363,
-         'video': 1010,
-         'automotive': 100,
-         'computer_&_video_games': 100,
-         'office_products': 100})
+For example, this is the number of training examples per domain in our case:
+
+'apparel': 1717,
+'baby': 1107,
+'beauty': 993,
+'books': 921,
+'camera_&_photo': 1086,
+'cell_phones_&_service': 698,
+'dvd': 893,
+'electronics': 1277,
+'grocery': 1100,
+'health_&_personal_care': 1429,
+'jewelry_&_watches': 1086,
+'kitchen_&_housewares': 1390,
+'magazines': 1133,
+'music': 1007,
+'outdoor_living': 980,
+'software': 1029,
+'sports_&_outdoors': 1336,
+'toys_&_games': 1363,
+'video': 1010,
+'automotive': 100,
+'computer_&_video_games': 100,
+'office_products': 100
          
 According to the statistics, We have 100 training examples for "office_products", "automotive", "computer_&videogames". Can we still build an accurate model on these domain ? --> Absolutetly
 
