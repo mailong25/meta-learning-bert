@@ -10,8 +10,7 @@ import os
 logger = logging.getLogger()
 logger.setLevel(logging.CRITICAL)
 os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
-from maml import Learner
-import torch
+from reptile import Learner
 from task import MetaTask
 import random
 import numpy as np
@@ -46,7 +45,7 @@ def main():
     parser.add_argument("--epoch", default=5, type=int,
                         help="Number of outer interation")
     
-    parser.add_argument("--k_spt", default=100, type=int,
+    parser.add_argument("--k_spt", default=80, type=int,
                         help="Number of support samples per task")
     
     parser.add_argument("--k_qry", default=20, type=int,
@@ -79,7 +78,7 @@ def main():
     args = parser.parse_args()
     
     reviews = json.load(open(args.data))
-    low_resource_domains = ["office_products", "automotive", "musical_instruments"]
+    low_resource_domains = ["office_products", "automotive", "computer_&_video_games"]
 
     train_examples = [r for r in reviews if r['domain'] not in low_resource_domains]
     test_examples = [r for r in reviews if r['domain'] in low_resource_domains]
