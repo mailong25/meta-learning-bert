@@ -9,7 +9,8 @@ This repository is an implementation of First-order MAML and Reptile on top of B
 
 Application can be use for domain adaptation with limited training examples. In our case, we try to build an build an accurate sentiment analysis model of Amazon product reviews for low-resource domains (~ 80 training examples/domain).
 
-What is domain adaptation:
+What is domain adaptation?
+
 Domain adaptation is a field associated with machine learning and transfer learning. This scenario arises when we aim at learning from high-resource domains a well performing model on low-resource (but related) domains.
 
 For example, this is the number of training examples per domain in our case:
