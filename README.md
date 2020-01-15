@@ -58,7 +58,9 @@ For example, this is the number of training examples per domain in our case:
 
 'office_products': 100
          
-According to the statistics, We have 100 training examples for "office_products", "automotive", "computer_&videogames". Can we still build an accurate model on these domain ? --> Absolutetly, we actually achieved an average accuracy of 93% with just 80 training examples.
+According to the statistics, We have 100 training examples for "office_products", "automotive", "computer_&videogames". Can we still build an accurate model on these domain ? 
+
+-> Absolutetly, we actually achieved an average accuracy of 93% on test domains with just 80 training examples.
 
 # Solution 
 We leverage data from high-resource domains to create a good "starting point". From this point, we start training a specific model for low-resource domain.
