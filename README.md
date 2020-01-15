@@ -79,3 +79,5 @@ So, what is the form of "learning strategy" of a learner ? . It's simply an init
 
 In other words, meta training is simply a process of learning to initialize model's weights such that these weights can be easily tunned. 
 
+# Example usage
+Please take a look at Interactive.ipynb
