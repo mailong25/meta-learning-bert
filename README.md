@@ -1,4 +1,4 @@
-# Few-shot text classification with meta learning and BERT as a learner
+# Fewshot text classification with meta learning and BERT
 This repository is an implementation of First-order MAML and Reptile on top of BERT. 
 Application can be use for domain adaptation with limited training examples. In our case, we try to build an build an accurate sentiment analysis model of Amazon product reviews for low-resource domains (~ 80 training examples/domain).
 
