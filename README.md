@@ -86,4 +86,4 @@ In other words, meta training is simply a process of learning to initialize mode
 Please take a look at Interactive.ipynb
 
 ## License
-Apache-2.0 license
+All the code (except the dataset.json) is under MIT License.
